@@ -1,0 +1,6 @@
+<button class="btn btn-primary pull-right" (click)="getAll()">
+  <i class="fa fa-register"></i> Get all projects
+</button>
+<select>
+    <option  *ngFor="let item of projects" [value]="item.name">{{item.name}}</option>
+  </select>
